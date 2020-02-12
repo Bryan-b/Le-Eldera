@@ -162,23 +162,23 @@ $('div.bg-parallax').each(function() {
 $(document).ready(
     function() {
 
-    $('html').niceScroll({
-        cursorcolor: "#000",
-        cursorborder: "0px solid #fff",
-        railpadding: {
-            top: 0,
-            right: 0,
-            left: 0,
-            bottom: 0
-        },
-        cursorwidth: "8px",
-        cursorborderradius: "16px",
-        cursoropacitymin: 0.2,
-        cursoropacitymax: 0.8,
-        boxzoom: true,
-        horizrailenabled: false,
-        zindex: 9999
-    });
+    // $('html').niceScroll({
+    //     cursorcolor: "#000",
+    //     cursorborder: "0px solid #fff",
+    //     railpadding: {
+    //         top: 0,
+    //         right: 0,
+    //         left: 0,
+    //         bottom: 0
+    //     },
+    //     cursorwidth: "8px",
+    //     cursorborderradius: "16px",
+    //     cursoropacitymin: 0.2,
+    //     cursoropacitymax: 0.8,
+    //     boxzoom: true,
+    //     horizrailenabled: false,
+    //     zindex: 9999
+    // });
 
 
         // Owl Carousel
@@ -207,13 +207,13 @@ $(document).ready(
 
 
     // footer always on bottom
-    var docHeight = $(window).height();
-   var footerHeight = $('#main-footer').height();
-   var footerTop = $('#main-footer').position().top + footerHeight;
+//     var docHeight = $(window).height();
+//    var footerHeight = $('#main-footer').height();
+//    var footerTop = $('#main-footer').position().top + footerHeight;
    
-   if (footerTop < docHeight) {
-    $('#main-footer').css('margin-top', (docHeight - footerTop) + 'px');
-   }
+//    if (footerTop < docHeight) {
+//     $('#main-footer').css('margin-top', (docHeight - footerTop) + 'px');
+//    }
     }
 
 
@@ -507,3 +507,15 @@ function tagline_vertical_slide() {
 function abortTimer() { // to be called when you want to stop the timer
     clearInterval(tid);
 }
+
+
+
+
+// PERSONAL
+$(document).on("click", "#oneWayToggle", function(){
+    $(".hideReturning").fadeOut();
+});
+
+$(document).on("click", "#twoWayToggle", function(){
+    $(".hideReturning").fadeIn();
+});
