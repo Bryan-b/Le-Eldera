@@ -1903,7 +1903,7 @@ body {
 }
 .bg-holder {
   position: relative;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 @media (max-width:992px){
