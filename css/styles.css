@@ -1876,12 +1876,12 @@ body {
 .special-area {
   height: 90.7vh;
   position: relative;
-  overflow: hidden;
+  /* overflow: scroll; */
 }
 @media (max-width:992px) {
   .top-area,
   .special-area {
-    height: auto;
+    /* height: auto; */
   }
 }
 .special-area {
@@ -1903,7 +1903,15 @@ body {
 }
 .bg-holder {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
+}
+
+@media (max-width:992px){
+  .bg-holder {
+    position: initial;
+    overflow: auto;
+    padding-bottom: 150px;
+  }
 }
 .bg-holder > .bg-mask,
 .bg-holder > .bg-blur,
