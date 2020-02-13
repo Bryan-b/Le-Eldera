@@ -523,3 +523,7 @@ $(document).on("click", "#twoWayToggle", function(){
 $(document).on("click", ".d_input", function(e){
     e.preventDefault();
 })
+
+function stopkey(e){
+    e.preventDefault();
+}
