@@ -29,3 +29,12 @@
     height: 100%;
     background-color: #000000bb;
 }
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 40px;
+}
