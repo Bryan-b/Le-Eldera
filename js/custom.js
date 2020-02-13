@@ -519,3 +519,7 @@ $(document).on("click", "#oneWayToggle", function(){
 $(document).on("click", "#twoWayToggle", function(){
     $(".hideReturning").fadeIn();
 });
+
+$(document).on("click", ".d_input", function(e){
+    e.preventDefault();
+})
